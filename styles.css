@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 300 to 900
+
+.red-hat display-<uniquifier> {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background: var(--Pale-blue) url("./images/pattern-background-desktop.svg") no-repeat left top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 360px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
+}
+.cover{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 2rem;
+}
+.order{
+    font-size: 1.5rem;
+    font-weight: 950;
+    color: var(--Dark-blue);
+    margin-bottom: 1rem;
+}
+.paragraph{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Desaturated-blue);
+    margin-bottom: 1rem;
+    width: 80%;
+    line-height: 1.5;
+}
+.plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    width: 85%;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.plan-info{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.plan img{
+    margin-right: -1rem;
+    margin-left: -0.5rem;
+}
+.plan h4{
+    font-weight: 950;
+  color: var(--Dark-blue);
+  margin-top: 0;
+  font-size: 1rem;
+  text-wrap: nowrap;
+}
+.plan p{
+    margin-top: 0;
+    color: var(--Desaturated-blue);
+}
+.change{
+  text-decoration: underline;
+  color: var(--Bright-blue);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  transition: color 0.5s;
+  margin-left: 1.8rem;
+}
+.change:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.7);
+    cursor: pointer;
+}
+.pay{
+    width: 80%;
+    background-color: var(--Bright-blue);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 0.9rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.pay:hover{
+    background-color: hsla(245, 75%, 52%, 0.7);
+    cursor: pointer;
+}
+.cancel{
+    display: block;
+  color: var(--Desaturated-blue);
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+  width: max-content;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  transition: color 0.5s;
+}
+.cancel:hover{
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
